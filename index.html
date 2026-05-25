@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
   :root {
     --bg: #f5f3ee;
@@ -133,7 +134,7 @@
   }
 
   .section-title h2 {
-    font-size: clamp(48px, 6vw, 78px);
+    font-size: clamp(40px, 5vw, 62px);
     line-height: 1;
     font-weight: 500;
   }
@@ -141,7 +142,7 @@
   .section-title p {
     margin-top: 28px;
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(20px, 2.4vw, 28px);
+    font-size: clamp(17px, 2vw, 22px);
     line-height: 1.45;
     max-width: 30ch;
     margin-left: auto;
@@ -180,16 +181,16 @@
 
   .about-text {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(18px, 1.6vw, 22px);
-    line-height: 1.5;
+    font-size: clamp(15px, 1.4vw, 18px);
+    line-height: 1.55;
     color: #1a1a1a;
     font-weight: 400;
   }
 
   .about-text h3 {
     text-align: center;
-    font-size: clamp(28px, 3vw, 42px);
-    margin-bottom: 32px;
+    font-size: clamp(24px, 2.6vw, 36px);
+    margin-bottom: 28px;
     font-weight: 500;
   }
 
@@ -220,29 +221,29 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(245,243,238,0.15) 0%, rgba(245,243,238,0.05) 50%, rgba(245,243,238,0.2) 100%);
+    background: linear-gradient(180deg, rgba(245,243,238,0.82) 0%, rgba(245,243,238,0.72) 50%, rgba(245,243,238,0.85) 100%);
     z-index: -1;
   }
 
   .courses-header {
     text-align: center;
-    padding: 96px 24px 56px;
+    padding: 72px 24px 40px;
     color: #111;
   }
 
   .courses-header h2 {
-    font-size: clamp(48px, 6vw, 78px);
+    font-size: clamp(32px, 4vw, 52px);
     line-height: 1;
     font-weight: 500;
     color: #111;
   }
 
   .courses-header p {
-    margin-top: 28px;
+    margin-top: 18px;
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(20px, 2.4vw, 28px);
+    font-size: clamp(15px, 1.7vw, 20px);
     line-height: 1.4;
-    max-width: 32ch;
+    max-width: 36ch;
     margin-left: auto;
     margin-right: auto;
     color: #111;
@@ -252,69 +253,70 @@
   .course-list {
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    padding: 16px 16px 56px;
+    gap: 20px;
+    padding: 12px 16px 48px;
     max-width: 880px;
     margin: 0 auto;
   }
 
   .course {
-    background: rgba(245,243,238,0.78);
+    background: rgba(245,243,238,0.88);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255,255,255,0.4);
-    border-radius: 26px;
-    padding: 36px 32px;
+    border-radius: 22px;
+    padding: 28px 26px;
     color: #141414;
   }
 
   .course h3 {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(28px, 3vw, 36px);
+    font-size: clamp(18px, 2vw, 26px);
     font-weight: 500;
     line-height: 1.1;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .course-age {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(18px, 2vw, 22px);
-    margin-bottom: 28px;
+    font-size: clamp(13px, 1.4vw, 16px);
+    margin-bottom: 18px;
     color: #1a1a1a;
   }
 
   .course-focus {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(18px, 2vw, 22px);
-    margin-bottom: 18px;
+    font-size: clamp(13px, 1.4vw, 16px);
+    margin-bottom: 12px;
+    font-weight: 500;
   }
 
   .course ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     padding: 0;
   }
 
   .course ul li {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
+    gap: 12px;
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(18px, 2vw, 22px);
-    line-height: 1.35;
-    padding-left: 8px;
+    font-size: clamp(13px, 1.4vw, 16px);
+    line-height: 1.4;
+    padding-left: 4px;
   }
 
   .bullet {
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #7fb56a 0%, #4a8a3f 60%, #2c5e29 100%);
     box-shadow: inset -2px -2px 4px rgba(0,0,0,0.15), inset 2px 2px 3px rgba(255,255,255,0.25);
-    margin-top: 4px;
+    margin-top: 3px;
     position: relative;
   }
 
@@ -334,11 +336,11 @@
     display: flex;
     justify-content: flex-start;
     gap: clamp(40px, 12vw, 120px);
-    padding: 48px 32px 8px;
+    padding: 40px 32px 8px;
   }
 
   .bee {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1;
     user-select: none;
   }
@@ -353,55 +355,61 @@
   }
 
   .contact-section h2 {
-    font-size: clamp(48px, 6vw, 78px);
+    font-size: clamp(32px, 4vw, 52px);
     line-height: 1;
     font-weight: 500;
   }
 
   .contact-section .sub {
-    margin-top: 28px;
+    margin-top: 20px;
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(20px, 2.4vw, 26px);
+    font-size: clamp(15px, 1.7vw, 19px);
     line-height: 1.4;
     text-wrap: balance;
   }
 
   .contact-card {
-    margin-top: 40px;
+    margin-top: 32px;
     background: #fff;
     border-radius: var(--radius);
-    padding: 48px 36px;
+    padding: 40px 28px;
     text-align: left;
   }
 
   .contact-card h3 {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(24px, 2.6vw, 30px);
+    font-size: clamp(18px, 2vw, 22px);
     font-weight: 500;
-    margin-bottom: 36px;
-    padding-left: 8px;
+    margin-bottom: 28px;
+    padding-left: 4px;
   }
 
   .contact-items {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 22px;
   }
 
   .contact-item {
     display: grid;
-    grid-template-columns: 48px 1fr;
-    gap: 18px;
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
     align-items: start;
   }
 
   .contact-icon {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2px;
+    margin-top: 1px;
+    color: #2a7d2e;
+  }
+
+  .contact-icon i {
+    font-size: 22px;
+    line-height: 1;
   }
 
   .contact-text {
@@ -409,29 +417,23 @@
   }
 
   .contact-text .label {
-    font-size: clamp(20px, 2.2vw, 24px);
-    margin-bottom: 6px;
+    font-size: clamp(14px, 1.5vw, 17px);
+    margin-bottom: 4px;
     font-weight: 500;
   }
 
   .contact-text .value {
-    font-size: clamp(16px, 1.8vw, 20px);
+    font-size: clamp(13px, 1.4vw, 15px);
     color: #2a2a2a;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
-  /* SVG icons */
-  .icon-chip {
-    width: 32px;
-    height: 32px;
-    fill: #2a7d2e;
-  }
-  .icon-mountain {
-    width: 36px;
-    height: 30px;
-  }
-  .globe-emoji {
-    font-size: 28px;
-    line-height: 1;
+  .contact-text .value-note {
+    font-size: clamp(13px, 1.4vw, 15px);
+    color: #2a2a2a;
+    font-weight: 400;
+    line-height: 1.45;
   }
 
   /* Quote */
@@ -439,8 +441,8 @@
     border-radius: var(--radius);
     overflow: hidden;
     position: relative;
-    min-height: 320px;
-    padding: 48px 36px;
+    min-height: 280px;
+    padding: 44px 36px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -469,19 +471,19 @@
 
   .quote-card blockquote {
     font-family: 'Fraunces', Georgia, serif;
-    font-size: clamp(20px, 2.4vw, 30px);
-    line-height: 1.3;
+    font-size: clamp(18px, 2vw, 26px);
+    line-height: 1.35;
     color: #141414;
     font-weight: 400;
-    max-width: 28ch;
+    max-width: 30ch;
   }
 
   .quote-card cite {
     display: block;
-    margin-top: 28px;
+    margin-top: 22px;
     font-family: 'Fraunces', Georgia, serif;
     font-style: normal;
-    font-size: clamp(16px, 1.6vw, 19px);
+    font-size: clamp(14px, 1.4vw, 17px);
     color: #1a1a1a;
   }
 
@@ -583,11 +585,11 @@
     }
 
     .course-list {
-      padding: 24px 48px 80px;
+      padding: 16px 48px 64px;
     }
 
     .course {
-      padding: 48px 44px;
+      padding: 32px 36px;
     }
 
     .contact-section {
@@ -595,14 +597,14 @@
     }
 
     .contact-card {
-      padding: 64px 56px;
-      max-width: 640px;
+      padding: 48px 48px;
+      max-width: 580px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .bees-row {
-      padding: 64px 64px 16px;
+      padding: 56px 64px 16px;
     }
   }
 
@@ -627,41 +629,8 @@
       <p class="hero-sub">Liebevoll begleitetes Yoga für Kinder und Teenager– auf dem Weg zu mehr Balance, innerer Ruhe und Selbstvertrauen.</p>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section-title" data-screen-label="02 About header">
-      <h2 class="serif">Über mich</h2>
-    </section>
-
-    <section class="card about-card" data-screen-label="02 About content">
-      <div class="about-inner">
-        <div class="about-photo">
-          <img src="assets/sabine-portrait.avif" alt="Sabine Asbeck" loading="lazy">
-        </div>
-        <div class="about-text">
-          <h3 class="serif">Sabine Asbeck</h3>
-          <p>Hallo, ich bin Sabine!</p>
-          <p>Yoga begleitet mich selbst seit vielen Jahren.</p>
-          <p>Als Ausgleich zu meinem Beruf als Bankangestellte bin ich gerne in der Natur. Am liebsten am Meer oder beim Wandern in den Bergen.</p>
-          <p>Morgens bei Sonnenaufgang, wenn Mutter Erde erwacht, der Tau noch auf den Gräsern liegt, liebe ich es zu joggen….einfach in Bewegung bleiben!</p>
-          <p>Die Liebe zu Kindern, ihre Begeisterungsfähigkeit und das Strahlen in ihren Augen, wenn ich mit ihnen intensiv Zeit verbringe und meine eigene Kreativität inspirierten mich zur Ausbildung als Kinderyogalehrerin (Lernen in Bewegung LiB gUG Miriam Datt Berlin) an der Yogaschule in Passau.</p>
-          <p>Yoga bietet den Kindern neue Entfaltungs- und Entwicklungschancen.</p>
-          <p>Im Kind ist alles angelegt, was spielerisch durch Körper-, Konzentrations- und Entspannungstechniken gefördert werden kann. Die Zugangsweise, mit dem Körper, den Sinnen und der Fantasie zu lernen und Neues zu erfahren, hilft Kindern, sich selbst und andere zu akzeptieren und wert zu schätzen.</p>
-          <p>Mit fantasievollen Anregungen zu den Yoga Positionen, die alleine schon durch die Namen, wie Baum, Flieger, Katze oder Schmetterling zur Nachahmung einladen, leite ich die Kinder an, Spaß an den Asanas (Übungen) zu finden und Yoga lieben zu lernen. In einer schnellen und reizüberfluteten Zeit, bilden entspannende Momente einen schönen und wichtigen Ausgleich.</p>
-          <p>Lernfähigkeit, Konzentration, Kreativität und das Selbstbewusstsein werden durch Yoga gestärkt.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUOTE -->
-    <section class="quote-card" data-screen-label="03 Quote">
-      <blockquote>
-        "Der Rhythmus des Körpers, die Melodie des Geistes und die Harmonie der Seele schaffen die Symphonie des Lebens"
-      </blockquote>
-      <cite>B.K.S. Iyengar</cite>
-    </section>
-
     <!-- COURSES -->
-    <section class="courses" data-screen-label="04 Courses">
+    <section class="courses" data-screen-label="02 Courses">
       <div class="courses-header">
         <h2 class="serif">Meine Kurse</h2>
         <p>Ich biete verschiedene Kurse an, die auf die jeweilige Altersgruppe der Kinder ideal zugeschnitten sind.</p>
@@ -709,6 +678,39 @@
       <span class="bee">🐝</span>
     </div>
 
+    <!-- QUOTE -->
+    <section class="quote-card" data-screen-label="03 Quote">
+      <blockquote>
+        "Der Rhythmus des Körpers, die Melodie des Geistes und die Harmonie der Seele schaffen die Symphonie des Lebens"
+      </blockquote>
+      <cite>B.K.S. Iyengar</cite>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section-title" data-screen-label="04 About header">
+      <h2 class="serif">Über mich</h2>
+    </section>
+
+    <section class="card about-card" data-screen-label="04 About content">
+      <div class="about-inner">
+        <div class="about-photo">
+          <img src="assets/sabine-portrait.avif" alt="Sabine Asbeck" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h3 class="serif">Sabine Asbeck</h3>
+          <p>Hallo, ich bin Sabine!</p>
+          <p>Yoga begleitet mich selbst seit vielen Jahren.</p>
+          <p>Als Ausgleich zu meinem Beruf als Bankangestellte bin ich gerne in der Natur. Am liebsten am Meer oder beim Wandern in den Bergen.</p>
+          <p>Morgens bei Sonnenaufgang, wenn Mutter Erde erwacht, der Tau noch auf den Gräsern liegt, liebe ich es zu joggen….einfach in Bewegung bleiben!</p>
+          <p>Die Liebe zu Kindern, ihre Begeisterungsfähigkeit und das Strahlen in ihren Augen, wenn ich mit ihnen intensiv Zeit verbringe und meine eigene Kreativität inspirierten mich zur Ausbildung als Kinderyogalehrerin (Lernen in Bewegung LiB gUG Miriam Datt Berlin) an der Yogaschule in Passau.</p>
+          <p>Yoga bietet den Kindern neue Entfaltungs- und Entwicklungschancen.</p>
+          <p>Im Kind ist alles angelegt, was spielerisch durch Körper-, Konzentrations- und Entspannungstechniken gefördert werden kann. Die Zugangsweise, mit dem Körper, den Sinnen und der Fantasie zu lernen und Neues zu erfahren, hilft Kindern, sich selbst und andere zu akzeptieren und wert zu schätzen.</p>
+          <p>Mit fantasievollen Anregungen zu den Yoga Positionen, die alleine schon durch die Namen, wie Baum, Flieger, Katze oder Schmetterling zur Nachahmung einladen, leite ich die Kinder an, Spaß an den Asanas (Übungen) zu finden und Yoga lieben zu lernen. In einer schnellen und reizüberfluteten Zeit, bilden entspannende Momente einen schönen und wichtigen Ausgleich.</p>
+          <p>Lernfähigkeit, Konzentration, Kreativität und das Selbstbewusstsein werden durch Yoga gestärkt.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact-section" data-screen-label="05 Contact">
       <h2 class="serif">Kontakt</h2>
@@ -720,50 +722,30 @@
 
           <div class="contact-item">
             <div class="contact-icon">
-              <!-- chip / phone icon (green) -->
-              <svg class="icon-chip" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="6" y="6" width="12" height="12" rx="2" fill="#2a7d2e"/>
-                <rect x="9" y="9" width="6" height="6" rx="1" fill="#1a4d1c"/>
-                <rect x="3" y="9"  width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="3" y="11.25" width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="3" y="13.5" width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="19" y="9"  width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="19" y="11.25" width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="19" y="13.5" width="2" height="1.5" fill="#2a7d2e"/>
-                <rect x="9" y="3" width="1.5" height="2" fill="#2a7d2e"/>
-                <rect x="11.25" y="3" width="1.5" height="2" fill="#2a7d2e"/>
-                <rect x="13.5" y="3" width="1.5" height="2" fill="#2a7d2e"/>
-                <rect x="9" y="19" width="1.5" height="2" fill="#2a7d2e"/>
-                <rect x="11.25" y="19" width="1.5" height="2" fill="#2a7d2e"/>
-                <rect x="13.5" y="19" width="1.5" height="2" fill="#2a7d2e"/>
-              </svg>
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
             </div>
             <div class="contact-text">
-              <div class="label">Telefon/Whatsapp</div>
+              <div class="label">Telefon / WhatsApp</div>
               <div class="value">0160 1762127</div>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <!-- triangle/mountain icon (green) -->
-              <svg class="icon-mountain" viewBox="0 0 36 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="18" cy="5" r="3" fill="#2a7d2e"/>
-                <path d="M18 11 L34 28 H2 Z" fill="#2a7d2e"/>
-              </svg>
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
             </div>
             <div class="contact-text">
-              <div class="label">Email</div>
+              <div class="label">E-Mail</div>
               <div class="value">info@kinderyogamitsabine.com</div>
             </div>
           </div>
 
           <div class="contact-item">
             <div class="contact-icon">
-              <span class="globe-emoji" aria-hidden="true">🌍</span>
+              <i class="bi bi-buildings-fill" aria-hidden="true"></i>
             </div>
             <div class="contact-text">
-              <div class="label" style="font-weight:400; font-size: clamp(18px, 2vw, 22px); line-height:1.4;">Auf Anfrage biete ich auch Yoga in Kindergärten &amp; Kitas an!</div>
+              <div class="value-note">Auf Anfrage biete ich auch Yoga in Kindergärten &amp; Kitas an!</div>
             </div>
           </div>
 
